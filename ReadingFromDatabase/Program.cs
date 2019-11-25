@@ -9,13 +9,11 @@ namespace ReadingFromDatabase
         static void Main(string[] args)
         {
             string row = "orderid";
-            //string whereFrom = "Sales.Orders";
-
-            //OpenSQLConnection(operation, row, whereFrom);*/
-
-            OpenSQLConnection("SELECT orderid FROM Sales.Orders", row);
+            string table = "Sales.Orders";
             
-            
+            //SelectSQL($"SELECT", "orderid", "Sales.Orders");
+
+            //ModifySQL("INSERT odjazdy (godzina, kierunek, typPociagu, przewoznik, skad) VALUES(0000, 'Test', 'Test2', 'Test3', 'Test4')");
 
             ReadKey();
         }
